@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitaltriageapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListPatientInfoActivity"
+            android:label="@string/title_activity_list_patient_info" >
+        </activity>
+        <activity
+            android:name=".ListPatientDataActivity"
+            android:label="@string/title_activity_list_patient_data" >
+        </activity>
+        <activity
+            android:name="backend.ListOfPatientInfoActivity"
+            android:label="@string/title_activity_list_of_patient_info"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name=".DisplayPatientProfile"
+            android:label="@string/patient_profile" >
+        </activity>
+        <activity
+            android:name=".DisplayPatientList"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NewPatientHistory"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddNewPatientHistory"
+            android:label="@string/add_new_patient_history" >
+        </activity>
+        <activity
+            android:name=".Updatehistory"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PatientMedicalHistory"
+            android:label="@string/patient_medical_history" >
+        </activity>
+        <activity
+            android:name=".DisplayPatientInfo"
+            android:label="@string/title_activity_display_patient_info" >
+        </activity>
+        <activity
+            android:name=".ListofPatients"
+            android:label="@string/title_activity_listof_patients" >
+        </activity>
+        <activity
+            android:name=".LoadPatientProfile"
+            android:label="@string/title_activity_load_patient_profile" >
+        </activity>
+        <activity
+            android:name=".NurseLoginActivity"
+            android:label="@string/title_activity_nurse_login" >
+        </activity>
+        <activity
+            android:name=".PhysicianLoginActivity"
+            android:label="@string/title_activity_physician_login" >
+        </activity>
+        <activity
+            android:name=".PhysicianLookUp"
+            android:label="@string/title_activity_physician_look_up" >
+        </activity>
+        <activity
+            android:name=".PhysicianAddNewPrescription"
+            android:label="@string/title_activity_physician_add_new_prescription" >
+        </activity>
+        <activity
+            android:name=".PhysicianDisplayPatientProfile"
+            android:label="@string/title_activity_physician_display_patient_profile" >
+        </activity>
+        <activity
+            android:name=".AddNewPatient"
+            android:label="@string/title_activity_add_new_patient" >
+        </activity>
+        <activity
+            android:name=".DiagnoseTime"
+            android:label="@string/title_activity_diagnose_time" >
+        </activity>
+        <activity
+            android:name=".DisplayDatesSeenDoctor"
+            android:label="@string/title_activity_display_dates_seen_doctor" >
+        </activity>
+    </application>
+
+</manifest>
